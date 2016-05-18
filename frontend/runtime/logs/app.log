@@ -1,0 +1,399 @@
+2016-05-17 14:01:25 [127.0.0.1][-][gtqvoap93vp82acquksaeob477][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'method_exists() expects parameter 2 to be string, array given' in /var/www/html/yii2build/vendor/yiisoft/yii2/base/Component.php:392
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'method_exists()...', '/var/www/html/y...', 392, Array)
+#1 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Component.php(392): method_exists(Object(common\models\User), Array)
+#2 /var/www/html/yii2build/vendor/yiisoft/yii2/validators/Validator.php(194): yii\base\Component->hasMethod(Array)
+#3 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(445): yii\validators\Validator::createValidator(Array, Object(common\models\User), Array, Array)
+#4 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(409): yii\base\Model->createValidators()
+#5 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(185): yii\base\Model->getValidators()
+#6 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(345): yii\base\Model->scenarios()
+#7 /var/www/html/yii2build/vendor/yiisoft/yii2/db/ActiveRecord.php(421): yii\base\Model->validate(NULL)
+#8 /var/www/html/yii2build/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/html/yii2build/frontend/models/SignupForm.php(56): yii\db\BaseActiveRecord->save()
+#10 /var/www/html/yii2build/frontend/controllers/SiteController.php(153): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 /var/www/html/yii2build/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('signup', Array)
+#15 /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#16 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+2016-05-17 14:01:24 [127.0.0.1][-][gtqvoap93vp82acquksaeob477][info][application] $_POST = [
+    '_csrf' => 'dkk2anRfUTQ3Ok8tIR1kXQADGykiBxVBAntdJQUdGQYjKEwEQh0ZeA=='
+    'SignupForm' => [
+        'username' => 'mig0s'
+        'email' => 'mail@mig0s.tk'
+        'password' => 'Demon778'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '4f3c44b515d8f261297210d971b9cf9c28712536ddef99c1ee44c032d01074c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AsyGUB5ivJ-CVXDut2kOqBH2Uazn6BHL\";}'
+    'PHPSESSID' => 'gtqvoap93vp82acquksaeob477'
+    'Phpstorm-c0f1ab0f' => 'ee288b0f-3e11-4dc4-8bbd-0f338609511f'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2build/frontend/web/site/signup'
+    'HTTP_COOKIE' => '_csrf=4f3c44b515d8f261297210d971b9cf9c28712536ddef99c1ee44c032d01074c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AsyGUB5ivJ-CVXDut2kOqBH2Uazn6BHL%22%3B%7D; PHPSESSID=gtqvoap93vp82acquksaeob477; Phpstorm-c0f1ab0f=ee288b0f-3e11-4dc4-8bbd-0f338609511f'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '184'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2build/frontend/web/index.php'
+    'REMOTE_PORT' => '45480'
+    'REDIRECT_URL' => '/yii2build/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2build/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/yii2build/frontend/web/index.php'
+    'PHP_SELF' => '/yii2build/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463493684.382
+    'REQUEST_TIME' => 1463493684
+]
+2016-05-17 14:04:59 [127.0.0.1][-][gtqvoap93vp82acquksaeob477][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'method_exists() expects parameter 2 to be string, array given' in /var/www/html/yii2build/vendor/yiisoft/yii2/base/Component.php:392
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'method_exists()...', '/var/www/html/y...', 392, Array)
+#1 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Component.php(392): method_exists(Object(common\models\User), Array)
+#2 /var/www/html/yii2build/vendor/yiisoft/yii2/validators/Validator.php(194): yii\base\Component->hasMethod(Array)
+#3 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(445): yii\validators\Validator::createValidator(Array, Object(common\models\User), Array, Array)
+#4 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(409): yii\base\Model->createValidators()
+#5 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(185): yii\base\Model->getValidators()
+#6 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Model.php(345): yii\base\Model->scenarios()
+#7 /var/www/html/yii2build/vendor/yiisoft/yii2/db/ActiveRecord.php(421): yii\base\Model->validate(NULL)
+#8 /var/www/html/yii2build/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/html/yii2build/frontend/models/SignupForm.php(56): yii\db\BaseActiveRecord->save()
+#10 /var/www/html/yii2build/frontend/controllers/SiteController.php(153): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 /var/www/html/yii2build/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('signup', Array)
+#15 /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#16 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+2016-05-17 14:04:57 [127.0.0.1][-][gtqvoap93vp82acquksaeob477][info][application] $_POST = [
+    '_csrf' => 'NFhERDQ3dWV1Kz0DYXVADEISaQdibzEQQGovC0V1PVdhOT4qAnU9KQ=='
+    'SignupForm' => [
+        'username' => 'admin'
+        'email' => 'admin@mig0s.tk'
+        'password' => 'Demon776'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '4f3c44b515d8f261297210d971b9cf9c28712536ddef99c1ee44c032d01074c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AsyGUB5ivJ-CVXDut2kOqBH2Uazn6BHL\";}'
+    'PHPSESSID' => 'gtqvoap93vp82acquksaeob477'
+    'Phpstorm-c0f1ab0f' => 'ee288b0f-3e11-4dc4-8bbd-0f338609511f'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/yii2build/frontend/web/site/signup'
+    'HTTP_COOKIE' => '_csrf=4f3c44b515d8f261297210d971b9cf9c28712536ddef99c1ee44c032d01074c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AsyGUB5ivJ-CVXDut2kOqBH2Uazn6BHL%22%3B%7D; PHPSESSID=gtqvoap93vp82acquksaeob477; Phpstorm-c0f1ab0f=ee288b0f-3e11-4dc4-8bbd-0f338609511f'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '185'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2build/frontend/web/index.php'
+    'REMOTE_PORT' => '45526'
+    'REDIRECT_URL' => '/yii2build/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2build/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/yii2build/frontend/web/index.php'
+    'PHP_SELF' => '/yii2build/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463493897.922
+    'REQUEST_TIME' => 1463493897
+]
+2016-05-18 07:21:11 [127.0.0.1][2][s3bq692m8r295krtf06a585bm1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "signup".' in /var/www/html/yii2build/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('signup', Array)
+#1 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-18 07:21:11 [127.0.0.1][2][s3bq692m8r295krtf06a585bm1][info][application] $_COOKIE = [
+    'Phpstorm-c0f1ab0f' => 'ee288b0f-3e11-4dc4-8bbd-0f338609511f'
+    '_csrf' => '07f7748d8dd8c8f0e3f4bef4029936b0ffddd4b33ea7e81fade27518f4f1c19ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q7fk0Dw9X0Wpc4SENa_fjvL4DF6u1s1m\";}'
+    'PHPSESSID' => 's3bq692m8r295krtf06a585bm1'
+    '_identity' => '1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'Phpstorm-c0f1ab0f=ee288b0f-3e11-4dc4-8bbd-0f338609511f; _csrf=07f7748d8dd8c8f0e3f4bef4029936b0ffddd4b33ea7e81fade27518f4f1c19ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q7fk0Dw9X0Wpc4SENa_fjvL4DF6u1s1m%22%3B%7D; PHPSESSID=s3bq692m8r295krtf06a585bm1; _identity=1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2build/frontend/web/index.php'
+    'REMOTE_PORT' => '53266'
+    'REDIRECT_URL' => '/yii2build/frontend/web/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2build/frontend/web/signup'
+    'SCRIPT_NAME' => '/yii2build/frontend/web/index.php'
+    'PHP_SELF' => '/yii2build/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463556071.911
+    'REQUEST_TIME' => 1463556071
+]
+2016-05-18 07:21:39 [127.0.0.1][2][v5t3eqp8vh2au3cud9oh0u3320][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/yii2build/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/yii2build/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/yii2build/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/yii2build/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#9 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-18 07:21:39 [127.0.0.1][2][v5t3eqp8vh2au3cud9oh0u3320][info][application] $_COOKIE = [
+    'Phpstorm-c0f1ab0f' => 'ee288b0f-3e11-4dc4-8bbd-0f338609511f'
+    '_csrf' => '07f7748d8dd8c8f0e3f4bef4029936b0ffddd4b33ea7e81fade27518f4f1c19ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q7fk0Dw9X0Wpc4SENa_fjvL4DF6u1s1m\";}'
+    'PHPSESSID' => 'v5t3eqp8vh2au3cud9oh0u3320'
+    '_identity' => '1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'Phpstorm-c0f1ab0f=ee288b0f-3e11-4dc4-8bbd-0f338609511f; _csrf=07f7748d8dd8c8f0e3f4bef4029936b0ffddd4b33ea7e81fade27518f4f1c19ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q7fk0Dw9X0Wpc4SENa_fjvL4DF6u1s1m%22%3B%7D; PHPSESSID=v5t3eqp8vh2au3cud9oh0u3320; _identity=1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2build/frontend/web/index.php'
+    'REMOTE_PORT' => '53268'
+    'REDIRECT_URL' => '/yii2build/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2build/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/yii2build/frontend/web/index.php'
+    'PHP_SELF' => '/yii2build/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463556099.578
+    'REQUEST_TIME' => 1463556099
+]
+2016-05-18 09:25:28 [127.0.0.1][-][k6ndpgj6vefvdqvburdfjdvom1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /var/www/html/yii2build/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /var/www/html/yii2build/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('view', Array)
+#3 /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('profile/view', Array)
+#4 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2016-05-18 09:25:28 [127.0.0.1][-][k6ndpgj6vefvdqvburdfjdvom1][info][application] $_COOKIE = [
+    'Phpstorm-c0f1ab0f' => 'ee288b0f-3e11-4dc4-8bbd-0f338609511f'
+    '_csrf' => '99efe853e2392ed0b92905d2107cc840213a0b5373e49f93d41262ee1f42691ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lMnhg4Xtr8Ub4_VvuF8uGpcBHFhnC8Jp\";}'
+    'PHPSESSID' => 'k6ndpgj6vefvdqvburdfjdvom1'
+    '_identity' => 'c26da94bd33e6d1c7febb037bdf6b8068a01f96ef11f83619cce74596805c350a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'Phpstorm-c0f1ab0f=ee288b0f-3e11-4dc4-8bbd-0f338609511f; _csrf=99efe853e2392ed0b92905d2107cc840213a0b5373e49f93d41262ee1f42691ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lMnhg4Xtr8Ub4_VvuF8uGpcBHFhnC8Jp%22%3B%7D; PHPSESSID=k6ndpgj6vefvdqvburdfjdvom1; _identity=c26da94bd33e6d1c7febb037bdf6b8068a01f96ef11f83619cce74596805c350a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2build/frontend/web/index.php'
+    'REMOTE_PORT' => '53608'
+    'REDIRECT_URL' => '/yii2build/frontend/web/profile/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2build/frontend/web/profile/view'
+    'SCRIPT_NAME' => '/yii2build/frontend/web/index.php'
+    'PHP_SELF' => '/yii2build/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463563528.281
+    'REQUEST_TIME' => 1463563528
+]
+2016-05-18 15:13:57 [127.0.0.1][2][hq1rr7oh12eb60g8o7voebft25][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/yii2build/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2build/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/yii2build/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2build/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-18 15:13:57 [127.0.0.1][2][hq1rr7oh12eb60g8o7voebft25][info][application] $_COOKIE = [
+    'PHPSESSID' => 'hq1rr7oh12eb60g8o7voebft25'
+    '_csrf' => '2bf5c51a9b2b3f1bb52f2bc1ba0c2300717e71fdfda8d696ea1a670f0eb6810da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qp0xwimyCKvAbVMdxOMesKEFFVw0Kvhd\";}'
+    '_identity' => '1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cyfbhiz'
+    '__captcha/site/captchacount' => 1
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=hq1rr7oh12eb60g8o7voebft25; _csrf=2bf5c51a9b2b3f1bb52f2bc1ba0c2300717e71fdfda8d696ea1a670f0eb6810da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qp0xwimyCKvAbVMdxOMesKEFFVw0Kvhd%22%3B%7D; _identity=1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2build/frontend/web/index.php'
+    'REMOTE_PORT' => '47429'
+    'REDIRECT_URL' => '/yii2build/frontend/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2build/frontend/web/admin'
+    'SCRIPT_NAME' => '/yii2build/frontend/web/index.php'
+    'PHP_SELF' => '/yii2build/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463584437.711
+    'REQUEST_TIME' => 1463584437
+]

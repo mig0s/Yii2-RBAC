@@ -12,6 +12,26 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        'request' => [
+            'csrfParam' => '_backendCSRF',
+            'csrfCookie' => [
+                'httpOnly' => true,
+                'path' => '/admin',
+            ],
+        ],
+        'user' => [
+            'identityCookie' => [
+                'name' => '_backendIdentity',
+                'path' => '/admin',
+                'httpOnly' => true,
+            ],
+        ],
+        'session' => [
+            'name' => 'BACKENDSESSID',
+            'cookieParams' => [
+                'path' => '/admin',
+            ],
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
