@@ -10,9 +10,9 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProfilerController implements the CRUD actions for Profile model.
+ * ProfileController implements the CRUD actions for Profile model.
  */
-class ProfilerController extends Controller
+class ProfileController extends Controller
 {
     /**
      * @inheritdoc

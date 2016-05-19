@@ -2,15 +2,18 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use common\models\PermissionHelpers;
-/* @var $this yii\web\View */
-/* @var $model common\models\user */
-$this->title = $model->username;
+/**
+ * @var yii\web\View $this
+ * @var frontend\models\Profile $model
+ */
+$this->title = $model->user->username;
 $show_this_nav = PermissionHelpers::requireMinimumRole('SuperUser');
-$this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Profiles', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="user-view">
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="profile-view">
+    <h1>Profile:
+        <?= Html::encode($this->title) ?></h1>
     <p>
         <?php if (!Yii::$app->user->isGuest && $show_this_nav) {
             echo Html::a('Update', ['update', 'id' => $model->id],
@@ -27,18 +30,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            ['attribute'=>'profileLink', 'format'=>'raw'],
-            //'username',
-            //'auth_key',
-            //'password_hash',
-            //'password_reset_token',
-            'email:email',
-            'roleName',
-            'statusName',
-            // lazyload 'status.status_name',
+            ['attribute'=>'userLink', 'format'=>'raw'],
+            'first_name',
+            'last_name',
+            'birthdate',
+            'gender.gender_name',
             'created_at',
             'updated_at',
             'id',
         ],
-    ]) ?>
+    ])?>
 </div>

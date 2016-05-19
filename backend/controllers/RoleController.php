@@ -8,6 +8,7 @@ use backend\models\search\RoleSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\PermissionHelpers;
 
 /**
  * RoleController implements the CRUD actions for Role model.
@@ -20,10 +21,34 @@ class RoleController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => \yii\filters\AccessControl::className(),
+                'only' => ['index', 'view','create', 'update', 'delete'],
+                'rules' => [
+                    [
+                        'actions' => ['index', 'view',],
+                        'allow' => true,
+                        'roles' => ['@'],
+                        'matchCallback' => function ($rule, $action) {
+                            return PermissionHelpers::requireMinimumRole('Admin')
+                            && PermissionHelpers::requireStatus('Active');
+                        }
+                    ],
+                    [
+                        'actions' => [ 'update', 'delete'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                        'matchCallback' => function ($rule, $action) {
+                            return PermissionHelpers::requireMinimumRole('SuperUser')
+                            && PermissionHelpers::requireStatus('Active');
+                        }
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    'delete' => ['post'],
                 ],
             ],
         ];
