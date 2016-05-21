@@ -184,7 +184,7 @@ if (!Yii::$app->user->isGuest){
                 </p>
 
             </div>
-            <div class="col-lg-4">
+<!--            <div class="col-lg-4">
 
                 <h2>Placeholder</h2>
 
@@ -199,18 +199,18 @@ if (!Yii::$app->user->isGuest){
                 <p>
 
                     <?php
-
+/*
                     if (!Yii::$app->user->isGuest && $is_admin) {
 
                         echo Html::a('Manage Profiles', ['profile/index'], ['class' => 'btn btn-default']);
 
                     }
 
-                    ?>
+                    */?>
 
                 </p>
 
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
