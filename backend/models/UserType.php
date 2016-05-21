@@ -4,6 +4,7 @@ namespace backend\models;
 
 use Yii;
 use common\models\User;
+
 /**
  * This is the model class for table "user_type".
  *
@@ -11,11 +12,13 @@ use common\models\User;
  * @property string $user_type_name
  * @property integer $user_type_value
  */
+
 class UserType extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
+
     public static function tableName()
     {
         return 'user_type';
@@ -24,18 +27,21 @@ class UserType extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
     public function rules()
     {
         return [
-            [['user_type_value'], 'required'],
+            [['user_type_name', 'user_type_value'], 'required'],
             [['user_type_value'], 'integer'],
-            [['user_type_name'], 'string', 'max' => 45],
+            [['user_type_value'],'in', 'range'=>range(1,100)],
+            [['user_type_name'], 'string', 'max' => 45]
         ];
     }
 
     /**
      * @inheritdoc
      */
+
     public function attributeLabels()
     {
         return [
@@ -44,11 +50,12 @@ class UserType extends \yii\db\ActiveRecord
             'user_type_value' => 'User Type Value',
         ];
     }
-    /**
-     * @return \yii\db\ActiveQuery
-     */
+
     public function getUsers()
     {
-        return $this->hasMany(User::className(), ['user_type_id' => 'user_type_value']);
+
+        return $this->hasMany(User::className(), ['user_type_id' => 'id']);
+
     }
+
 }

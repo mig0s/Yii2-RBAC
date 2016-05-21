@@ -17,6 +17,7 @@ class Role extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
     public static function tableName()
     {
         return 'role';
@@ -25,18 +26,21 @@ class Role extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
     public function rules()
     {
         return [
             [['role_name', 'role_value'], 'required'],
             [['role_value'], 'integer'],
-            [['role_name'], 'string', 'max' => 45],
+            [['role_value'],'in', 'range'=>range(1,100)],
+            [['role_name'], 'string', 'max' => 45]
         ];
     }
 
     /**
      * @inheritdoc
      */
+
     public function attributeLabels()
     {
         return [
@@ -49,8 +53,12 @@ class Role extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+
     public function getUsers()
     {
-        return $this->hasMany(User::className(), ['role_id' => 'role_value']);
+
+        return $this->hasMany(User::className(), ['role_id' => 'id']);
+
     }
+
 }

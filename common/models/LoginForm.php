@@ -4,6 +4,7 @@ namespace common\models;
 use Yii;
 use yii\base\Model;
 use yii\web\NotFoundHttpException;
+use common\models\PermissionHelpers;
 /**
  * Login form
  */
@@ -13,12 +14,13 @@ class LoginForm extends Model
     public $password;
     public $rememberMe = true;
 
-    private $_user;
+    private $_user = false;
 
 
     /**
      * @inheritdoc
      */
+
     public function rules()
     {
         return [
@@ -38,6 +40,7 @@ class LoginForm extends Model
      * @param string $attribute the attribute currently being validated
      * @param array $params the additional name-value pairs given in the rule
      */
+
     public function validatePassword($attribute, $params)
     {
         if (!$this->hasErrors()) {
@@ -53,15 +56,31 @@ class LoginForm extends Model
      *
      * @return boolean whether the user is logged in successfully
      */
+
     public function login()
     {
-        if ($this->validate() && $this->getUser()->status_id ==
-            ValueHelpers::getStatusValue('Active')) {
-            return Yii::$app->user->login($this->getUser(),
-                $this->rememberMe ? 3600 * 24 * 30 : 0);
+        if ($this->validate()) {
+
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+
         } else {
+
             return false;
         }
+    }
+
+    public function loginAdmin()
+    {
+        if (($this->validate()) && PermissionHelpers::requireMinimumRole('Admin', $this->getUser()->id)) {
+
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+
+        } else {
+
+            throw new NotFoundHttpException('You Shall Not Pass.');
+
+        }
+
     }
 
     /**
@@ -69,24 +88,13 @@ class LoginForm extends Model
      *
      * @return User|null
      */
-    protected function getUser()
+
+    public function getUser()
     {
-        if ($this->_user === null) {
+        if ($this->_user === false) {
             $this->_user = User::findByUsername($this->username);
         }
 
         return $this->_user;
-    }
-    public function loginAdmin()
-    {
-        if (($this->validate()) && $this->getUser()->role_id >=
-            ValueHelpers::getRoleValue('Admin')
-            && $this->getUser()->status_id ==
-            ValueHelpers::getStatusValue('Active')) {
-            return Yii::$app->user->login($this->getUser(),
-                $this->rememberMe ? 3600 * 24 * 30 : 0);
-        } else {
-            throw new NotFoundHttpException('You Shall Not Pass.');
-        }
     }
 }
