@@ -84,7 +84,7 @@ initial-scale=1">
                 'label' => 'Users', 'items' => [
                     ['label' => 'Users', 'url' => ['user/index']],
                     ['label' => 'Profiles', 'url' => ['profile/index']],
-//                    ['label' => 'Something else here', 'url' => ['#']],
+//                  ['label' => 'Something else here', 'url' => ['#']],
                 ],
             ];
             $menuItems[] = [
@@ -94,18 +94,22 @@ initial-scale=1">
                     ['label' => 'Statuses', 'url' => ['status/index']],
                 ],
             ];
-//                'label' => 'Content', 'items' => [
+//          $menuItems[] = [
+//              'label' => 'Content', 'items' => [
 //                    ['label' => 'Content', 'url' => ['content/index']],
 //                    ['label' => 'Status Messages', 'url' => ['status-message/index']],
 //                    ['label' => 'FAQ', 'url' => ['faq/index']],
 //                    ['label' => 'FAQ Category', 'url' => ['faq-category/index']],
 //                ],
-//                'label' => 'Support', 'items' => [
-//                    ['label' => 'Support Requests', 'url' => ['content/index']],
-//                    ['label' => 'Status Messages', 'url' => ['status-message/index']],
-//                    ['label' => 'FAQ', 'url' => ['faq/index']],
-//                    ['label' => 'FAQ Categories', 'url' => ['faq-category/index']],
-//                ],
+//          ];
+//          $menuItems[] = [
+//              'label' => 'Support', 'items' => [
+//                  ['label' => 'Support Requests', 'url' => ['content/index']],
+//                  ['label' => 'Status Messages', 'url' => ['status-message/index']],
+//                  ['label' => 'FAQ', 'url' => ['faq/index']],
+//                  ['label' => 'FAQ Categories', 'url' => ['faq-category/index']],
+//              ],
+//          ];
         }
 
         if (Yii::$app->user->isGuest) {
