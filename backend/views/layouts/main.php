@@ -80,16 +80,32 @@ initial-scale=1">
 
         if (!Yii::$app->user->isGuest && $is_admin) {
 
-            $menuItems[] = ['label' => 'Users', 'url' => ['user/index']];
-
-            $menuItems[] = ['label' => 'Profiles', 'url' => ['profile/index']];
-
-            $menuItems[] = ['label' => 'Roles', 'url' => ['role/index']];
-
-            $menuItems[] = ['label' => 'User Types', 'url' => ['user-type/index']];
-
-            $menuItems[] = ['label' => 'Statuses', 'url' => ['status/index']];
-
+            $menuItems[] = [
+                'label' => 'Users', 'items' => [
+                    ['label' => 'Users', 'url' => ['user/index']],
+                    ['label' => 'Profiles', 'url' => ['profile/index']],
+//                    ['label' => 'Something else here', 'url' => ['#']],
+                ],
+            ];
+            $menuItems[] = [
+                'label' => 'RBAC', 'items' => [
+                    ['label' => 'Roles', 'url' => ['role/index']],
+                    ['label' => 'User Types', 'url' => ['user-type/index']],
+                    ['label' => 'Statuses', 'url' => ['status/index']],
+                ],
+            ];
+//                'label' => 'Content', 'items' => [
+//                    ['label' => 'Content', 'url' => ['content/index']],
+//                    ['label' => 'Status Messages', 'url' => ['status-message/index']],
+//                    ['label' => 'FAQ', 'url' => ['faq/index']],
+//                    ['label' => 'FAQ Category', 'url' => ['faq-category/index']],
+//                ],
+//                'label' => 'Support', 'items' => [
+//                    ['label' => 'Support Requests', 'url' => ['content/index']],
+//                    ['label' => 'Status Messages', 'url' => ['status-message/index']],
+//                    ['label' => 'FAQ', 'url' => ['faq/index']],
+//                    ['label' => 'FAQ Categories', 'url' => ['faq-category/index']],
+//                ],
         }
 
         if (Yii::$app->user->isGuest) {
