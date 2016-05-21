@@ -1,8 +1,7 @@
-Yii 2 Advanced Project Template
+RBAC Project Template based on Yii 2
 ===============================
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+RBAC Project Template uses Yii 2 Advanced Project Template as a skeleton [Yii 2](http://www.yiiframework.com/) application, best for developing complex Web applications with multiple tiers.
 
 The template includes three tiers: front end, back end, and console, each of which
 is a separate Yii application.
@@ -10,15 +9,14 @@ is a separate Yii application.
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+This particular project is designed for deployment on a shared hosting.
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
+The template contains Role-Based Access Control system and administration tools for maintenance.
+
+Yii 2 documentation is at [docs/guide/README.md](docs/guide/README.md).
 
 DIRECTORY STRUCTURE
 -------------------
-
 ```
 common
     config/              contains shared configurations
@@ -37,7 +35,6 @@ backend
     models/              contains backend-specific model classes
     runtime/             contains files generated during runtime
     views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
 frontend
     assets/              contains application assets such as JavaScript and CSS
     config/              contains frontend configurations
@@ -45,8 +42,11 @@ frontend
     models/              contains frontend-specific model classes
     runtime/             contains files generated during runtime
     views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
     widgets/             contains frontend widgets
+
+html/                    contains the frontend entry script and Web resources
+    admin/               contains the backend entry script and Web resources
+
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 tests                    contains various tests for the advanced application
