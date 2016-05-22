@@ -1,4 +1,4 @@
-RBAC Project Template based on Yii 2
+Yii 2 RBAC Project Template
 ===============================
 
 RBAC Project Template uses Yii 2 Advanced Project Template as a skeleton [Yii 2](http://www.yiiframework.com/) application, best for developing complex Web applications with multiple tiers.
