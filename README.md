@@ -13,8 +13,6 @@ This particular project is configured for deployment on a shared hosting.
 
 The template contains Role-Based Access Control system and administration tools for maintenance.
 
-Yii 2 documentation is at [docs/guide/README.md](docs/guide/README.md).
-
 DIRECTORY STRUCTURE
 -------------------
 ```
