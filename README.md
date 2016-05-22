@@ -9,7 +9,7 @@ is a separate Yii application.
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
 
-This particular project is designed for deployment on a shared hosting.
+This particular project is configured for deployment on a shared hosting.
 
 The template contains Role-Based Access Control system and administration tools for maintenance.
 
