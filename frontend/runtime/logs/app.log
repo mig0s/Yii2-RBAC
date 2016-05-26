@@ -2402,3 +2402,314 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1463911031.774
     'REQUEST_TIME' => 1463911031
 ]
+2016-05-23 07:51:30 [127.0.0.1][2][tf4l8fs43bjqmrujg84fkqq7v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: profile/viewfdvdfv' in /var/www/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('viewfdvdfv', Array)
+#1 /var/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('profile/viewfdv...', Array)
+#2 /var/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-23 07:51:30 [127.0.0.1][2][tf4l8fs43bjqmrujg84fkqq7v3][info][application] $_COOKIE = [
+    '_identity' => '1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB\",2592000]\";}'
+    'PHPSESSID' => 'tjmlk4gkdj0o9idh4mvtd8sc12'
+    '_csrf' => '67398d1601db505884b315401d3d70c50102c01e748e3ca36b75e7fb4ac358b0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DFmMQt2_9KPyWhEqMO_bJxRHC5N4EzRv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB%22%2C2592000%5D%22%3B%7D; PHPSESSID=tjmlk4gkdj0o9idh4mvtd8sc12; _csrf=67398d1601db505884b315401d3d70c50102c01e748e3ca36b75e7fb4ac358b0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DFmMQt2_9KPyWhEqMO_bJxRHC5N4EzRv%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '57572'
+    'REDIRECT_URL' => '/profile/viewfdvdfv'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/profile/viewfdvdfv'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1463989889.884
+    'REQUEST_TIME' => 1463989889
+]
+2016-05-24 10:50:14 [127.0.0.1][2][kmmlm6mhvqgb5l09lh3ohqpis5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: profile/viewfdvdfv' in /var/www/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('viewfdvdfv', Array)
+#1 /var/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('profile/viewfdv...', Array)
+#2 /var/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-24 10:50:13 [127.0.0.1][2][kmmlm6mhvqgb5l09lh3ohqpis5][info][application] $_COOKIE = [
+    '_identity' => '1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB\",2592000]\";}'
+    'PHPSESSID' => 'tf4l8fs43bjqmrujg84fkqq7v3'
+    '_csrf' => '67398d1601db505884b315401d3d70c50102c01e748e3ca36b75e7fb4ac358b0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DFmMQt2_9KPyWhEqMO_bJxRHC5N4EzRv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=1d2fa34b107399d7ac03b7e4cd4d2209fb8430cf95e722f5efe1ea78efda5ee3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22hoyzn1fxFIydSSRYqbd3r0wljrv9QhzB%22%2C2592000%5D%22%3B%7D; PHPSESSID=tf4l8fs43bjqmrujg84fkqq7v3; _csrf=67398d1601db505884b315401d3d70c50102c01e748e3ca36b75e7fb4ac358b0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DFmMQt2_9KPyWhEqMO_bJxRHC5N4EzRv%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REMOTE_PORT' => '42601'
+    'REDIRECT_URL' => '/profile/viewfdvdfv'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/profile/viewfdvdfv'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464087013.905
+    'REQUEST_TIME' => 1464087013
+]
+2016-05-26 11:49:03 [192.168.56.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.56.1
+    in /var/www/frontend/views/layouts/main.php:80
+    in /var/www/frontend/controllers/SiteController.php:75
+2016-05-26 11:49:03 [192.168.56.1][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-user'
+    'HOME' => '/home/www-user'
+    'FCGI_ROLE' => 'RESPONDER'
+    'HTTP_AUTHORIZATION' => ''
+    'APP_ENV' => 'dev'
+    'proxy-nokeepalive' => '1'
+    'HTTP_USER_AGENT' => 'Jakarta Commons-HttpClient/3.1'
+    'HTTP_HOST' => 'machina.dev'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.20 (Ubuntu)'
+    'SERVER_NAME' => 'machina.dev'
+    'SERVER_ADDR' => '192.168.56.101'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.56.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2build'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2build'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/yii2build/index.php'
+    'REMOTE_PORT' => '57612'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464263343.1972
+    'REQUEST_TIME' => 1464263343
+]
+2016-05-26 11:49:03 [192.168.56.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.56.1
+    in /var/www/frontend/views/layouts/main.php:80
+    in /var/www/frontend/controllers/SiteController.php:75
+2016-05-26 11:49:03 [192.168.56.1][-][-][info][application] $_COOKIE = [
+    '$Version' => '0'
+    'PHPSESSID' => '53p5nkpbc2tctosr7i80n6hk17'
+    '$Path' => '/, $Version=0'
+    '_csrf' => '71fd73a70a369e11e555449c04a8431b0d624e771343857b1015cc691edb1122a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6Ytd6ddeDcA8fkCFuIN1u3guzMNd-MF4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-user'
+    'HOME' => '/home/www-user'
+    'FCGI_ROLE' => 'RESPONDER'
+    'HTTP_AUTHORIZATION' => ''
+    'APP_ENV' => 'dev'
+    'proxy-nokeepalive' => '1'
+    'HTTP_USER_AGENT' => 'Jakarta-Commons-VFS'
+    'HTTP_HOST' => 'machina.dev'
+    'HTTP_COOKIE' => '$Version=0; PHPSESSID=53p5nkpbc2tctosr7i80n6hk17; $Path=/, $Version=0; _csrf=71fd73a70a369e11e555449c04a8431b0d624e771343857b1015cc691edb1122a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226Ytd6ddeDcA8fkCFuIN1u3guzMNd-MF4%22%3B%7D; $Path=/'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.20 (Ubuntu)'
+    'SERVER_NAME' => 'machina.dev'
+    'SERVER_ADDR' => '192.168.56.101'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.56.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2build'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2build'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/yii2build/index.php'
+    'REMOTE_PORT' => '47968'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464263343.6916
+    'REQUEST_TIME' => 1464263343
+]
+2016-05-26 11:49:13 [192.168.56.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.56.1
+    in /var/www/frontend/views/layouts/main.php:80
+    in /var/www/frontend/controllers/SiteController.php:75
+2016-05-26 11:49:13 [192.168.56.1][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-user'
+    'HOME' => '/home/www-user'
+    'FCGI_ROLE' => 'RESPONDER'
+    'HTTP_AUTHORIZATION' => ''
+    'APP_ENV' => 'dev'
+    'proxy-nokeepalive' => '1'
+    'HTTP_USER_AGENT' => 'Jakarta Commons-HttpClient/3.1'
+    'HTTP_HOST' => 'machina.dev'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.20 (Ubuntu)'
+    'SERVER_NAME' => 'machina.dev'
+    'SERVER_ADDR' => '192.168.56.101'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.56.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2build'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2build'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/yii2build/index.php'
+    'REMOTE_PORT' => '47298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464263353.15
+    'REQUEST_TIME' => 1464263353
+]
+2016-05-26 11:49:13 [192.168.56.1][-][7hv7qr4lke4nteansohnlqp1m7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "PhpStorm-9a2e26d5-531c-4f65-bcf3-34d7970850dd.php".' in /var/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('PhpStorm-9a2e26...', Array)
+#1 /var/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/yii2build/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/yii2build/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-26 11:49:13 [192.168.56.1][-][7hv7qr4lke4nteansohnlqp1m7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.56.1
+    in /var/www/frontend/views/layouts/main.php:80
+2016-05-26 11:49:13 [192.168.56.1][-][7hv7qr4lke4nteansohnlqp1m7][info][application] $_COOKIE = [
+    '$Version' => '0'
+    'PHPSESSID' => '7hv7qr4lke4nteansohnlqp1m7'
+    '$Path' => '/, $Version=0'
+    '_csrf' => 'f5dad7c7e2b7b1912ac704ae8f50c52f7ac098fc1f6db9bd71a6c918d0d8f6bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"p34Ab30qoXY8UY7EYlWGB1OqCPGpTgOs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-user'
+    'HOME' => '/home/www-user'
+    'FCGI_ROLE' => 'RESPONDER'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_APP_ENV' => 'dev'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'APP_ENV' => 'dev'
+    'proxy-nokeepalive' => '1'
+    'HTTP_USER_AGENT' => 'Jakarta-Commons-VFS'
+    'HTTP_HOST' => 'machina.dev'
+    'HTTP_COOKIE' => '$Version=0; PHPSESSID=7hv7qr4lke4nteansohnlqp1m7; $Path=/, $Version=0; _csrf=f5dad7c7e2b7b1912ac704ae8f50c52f7ac098fc1f6db9bd71a6c918d0d8f6bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22p34Ab30qoXY8UY7EYlWGB1OqCPGpTgOs%22%3B%7D; $Path=/'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.20 (Ubuntu)'
+    'SERVER_NAME' => 'machina.dev'
+    'SERVER_ADDR' => '192.168.56.101'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.56.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2build'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2build'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/yii2build/index.php'
+    'REMOTE_PORT' => '60635'
+    'REDIRECT_URL' => '/PhpStorm-9a2e26d5-531c-4f65-bcf3-34d7970850dd.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PhpStorm-9a2e26d5-531c-4f65-bcf3-34d7970850dd.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464263353.2523
+    'REQUEST_TIME' => 1464263353
+]
